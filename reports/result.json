@@ -1,0 +1,192 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "To validate login process",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7193873100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in facebook login page",
+            "match": {
+              "location": "Login.user_is_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-20T14:45:56.715Z",
+        "line": 9,
+        "name": "To validate login with different credentials",
+        "description": "",
+        "id": "to-validate-login-functionality-in-facebook-application.;to-validate-login-with-different-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 316486200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter invalid username and password.",
+            "match": {
+              "location": "Login.user_enter_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120313400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click Login button.",
+            "match": {
+              "location": "Login.user_click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5264600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be in invalid credential page.",
+            "match": {
+              "location": "Login.user_should_be_in_invalid_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "To validate login process",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5425508500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in facebook login page",
+            "match": {
+              "location": "Login.user_is_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-20T14:46:04.435Z",
+        "line": 24,
+        "name": "To validate searching the account using mobile when user forgot the password",
+        "description": "",
+        "id": "to-validate-login-functionality-in-facebook-application.;to-validate-searching-the-account-using-mobile-when-user-forgot-the-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1803600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User navigate to facebook login page",
+            "match": {
+              "location": "Login.user_navigate_to_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2244590000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks forgotten password link",
+            "match": {
+              "location": "Login.user_clicks_forgotten_password_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 229051200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User seaches  the account using invalid mobilenumber\"5488795632213222\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"5488795632213222\"",
+                  "offset": 52
+                }
+              ],
+              "location": "Login.user_seaches_the_account_using_invalid_mobilenumber(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 858700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is displayed with error message",
+            "match": {
+              "location": "Login.user_is_displayed_with_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@invalidpassword"
+          }
+        ]
+      }
+    ],
+    "name": "To validate Login functionality in Facebook Application.",
+    "description": "",
+    "id": "to-validate-login-functionality-in-facebook-application.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
